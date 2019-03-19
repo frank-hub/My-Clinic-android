@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/l1"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+
+    <!---->
+    <Button
+        android:id="@+id/bookings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:drawableTop="@drawable/ic_access_time_black_50dp"
+        android:onClick="openCal"
+        android:text="Book\nAppointment" />
+
+    <Button
+        android:id="@+id/askDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:drawableTop="@drawable/ic_voicemail_black_24dp"
+        android:text="Ask Doctor" />
+
+    <Button
+        android:id="@+id/docInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#fff"
+        android:drawableTop="@drawable/ic_person_pin_black_24dp"
+        android:onClick="doctorInfo"
+        android:text="Doctor Info" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:onClick="makeCall"
+            android:elevation="2dp"
+            android:drawableTop="@drawable/ic_contact_phone_black_50dp"
+            android:text="Contact Us" />
+
+        <Button
+            android:id="@+id/healthTips"
+            android:layout_width="113dp"
+            android:layout_height="80dp"
+            android:background="#fff"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:drawableTop="@drawable/ic_healing_black_24dp"
+            android:text="Health Tips" />
+
+        <Button
+            android:id="@+id/myAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:onClick="MyAccount"
+            android:drawableTop="@drawable/ic_lock_black_24dp"
+            android:text="My Account" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="228dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textHealthTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Health Tips"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
